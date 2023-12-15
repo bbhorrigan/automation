@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIP Test Automation Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SIP Total Automation Environment</h1>
+
+        <div class="section">
+            <h2>1. User Account Type</h2>
+            <select id="testAccount">
+                <option value="consultant">Consultant</option>
+                <option value="security">Security</option>
+                <option value="it">IT</option>
+                <option value="contractor">External Contractor</option>
+                <option value="mdp">MDP</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>2. Platform Choice</h2>
+            <select id="platformChoice">
+                <option value="pc">PC</option>
+                <option value="mobile">Mobile Device</option>
+                <option value="vm">Virtual Machine (VM)</option>
+                <option value="mac">Mac</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>3. Selecting a DLP Use Case</h2>
+            <select id="dlpUseCase">
+                <option value="emailSecurity">Email Transmission Security</option>
+                <option value="cloudDataLeakage">Cloud Storage Data Leakage</option>
+                <option value="endpointProtection">Endpoint Protection</option>
+                <option value="insiderThreat">Insider Threat Prevention</option>
+                <option value="regulatoryCompliance">Regulatory Compliance</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>4. Infrastructure Spin-Up</h2>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="services" value="chrome"> Chrome</label>
+                <label><input type="checkbox" name="services" value="alternateBrowsers"> Alternate Browsers</label>
+                <label><input type="checkbox" name="services" value="zscaler"> Zscaler</label>
+                <label><input type="checkbox" name="services" value="officeSuite"> Office Suite</label>
+                <label><input type="checkbox" name="services" value="adobe"> Adobe</label>
+                <label><input type="checkbox" name="services" value="slack"> Slack</label>
+                <label><input type="checkbox" name="services" value="dropbox"> Dropbox</label>
+                <label><input type="checkbox" name="services" value="personalOneDrive"> Personal OneDrive</label>
+                <label><input type="checkbox" name="services" value="s3"> S3</label>
+            </div>
+            <button id="spinUp">Start Infrastructure Spin-Up</button>
+        </div>
+        
+        <div class="section">
+            <h2>5. Data Generation</h2>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="dataGeneration" value="1gbOneDrive"> Add 1GB to OneDrive</label>
+                <label><input type="checkbox" name="dataGeneration" value="500mbOneDrive"> Add 500MB to OneDrive</label>
+                <label><input type="checkbox" name="dataGeneration" value="1gbMailbox"> Add 1GB to Mailbox</label>
+                <label><input type="checkbox" name="dataGeneration" value="500mbMailbox"> Add 500MB to Mailbox</label>
+            </div>
+            <button id="generateData">Initiate Data Generation</button>
+        </div>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <h2>Test Completion Log</h2>
+    <table id="testLog">
+        <thead>
+            <tr>
+                <th>Test ID</th>
+                <th>Test Case</th>
+                <th>User</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>002</td>
+                <td>Testing Data Leak on Mac</td>
+                <td>Peter Horrigan</td>
+                <td>Running</td>
+                <td>2023-12-13</td>
+                <td>Running test to confirm DLP</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Email Security Check</td>
+                <td>Paul Gogan</td>
+                <td>Completed</td>
+                <td>2023-12-12</td>
+                <td>Email transmission secured with encryption</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Cloud Storage Compliance Test</td>
+                <td>Peter Horrigan2</td>
+                <td>Failed</td>
+                <td>2023-12-11</td>
+                <td>Non-compliance with cloud storage policies</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

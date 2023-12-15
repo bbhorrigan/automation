@@ -1,0 +1,86 @@
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section label {
+    display: inline-block; /* Updated this line */
+    margin-right: 15px; /* Added spacing between checkboxes */
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* This will ensure the checkboxes wrap onto the next line if they reach the end of the container */
+.section .checkbox-container {
+    display: flex; /* Use flexbox to handle the layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.section button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: #0056b3;
+}
+
+/* ...other styles... */
+
+.checkbox-container {
+    display: flex; /* Use flexbox to handle the layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-bottom: 10px; /* Add some space above the button */
+}
+
+/* ...other styles... */
+
+/* Add this to your existing CSS */
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
