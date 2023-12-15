@@ -1,0 +1,9 @@
+# Connect to Office 365
+$UserCredential = Get-Credential
+Connect-MsolService -Credential $UserCredential
+
+# Retrieve and filter users
+$users = Get-MsolUser -All | Where-Object { $_.Department -eq "YourDepartment" } | Select-Object -First 25
+
+# Output the users
+$users | Format-Table DisplayName, UserPrincipalName, Department
